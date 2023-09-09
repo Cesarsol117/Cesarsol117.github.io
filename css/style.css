@@ -1,0 +1,492 @@
+:root{
+    /* custom propiedades */
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --titulohoja: #1703b5;
+    --gris: #757575;
+    /* se puede crear cualquier tipo de varible para definir el css */
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/* se agrega un box sizing */
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+    font-family:  'Krub', Arial, Helvetica, sans-serif;
+    /* margin: 0 10rem; */
+    background-image: linear-gradient(to top, #DFE9f3 0%, #ffffff 100%) ;
+}
+
+
+/* media querys  */
+@media (min-width: 480px) { /* mayor a   */
+    body{
+        background-color: cornflowerblue;
+    }
+    
+}
+@media (min-width: 768px ) { /* mayor a eso y menor cambia a otro  */
+    body{
+        background-color: azure;
+    };
+}
+
+/* desing system */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+    /* border: 1px solid #000000; */
+/* ------------------ */
+}
+.titulo span{
+    font-size: 2rem;
+}
+/* --------------- css a navegacion */
+.contenedor{
+    max-width: 120rem;
+    /* margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* border: 1px solid #000000; */
+    
+}
+/* agregar un boton */
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border-width: 10rem n;
+}
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+  
+}
+/* --- */
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    /* se agrega flex box */
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+/* media queris para la navegacion */
+@media (min-width: 768px) { 
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+  
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+/* se agrega un hero */
+.hero{
+    background-image: url( https://drive.google.com/uc?id=1HeQkUbE_fyXrmO0T9foaG_yA83Yuu6hn);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    /* posiciona mienti */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* codigo para alinear vertical como horizontal */
+}
+/* para el css de la cv */
+.cv{
+    background-image: url( https://drive.google.com/uc?id=1YRYfLmHdcZqbRGWMC5Kf-n6k_o16805s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    position: relative;
+    
+}
+
+.contenido-cv{
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    /* posiciona mienti */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        /* codigo para alinear vertical como horizontal */
+}
+/* / */
+/* codigo para el contactarme */
+.contac{
+    background-image: url( https://drive.google.com/uc?id=1dMGzmp2-S8s0In5GwfSfiNeXcAemCckm);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+
+.contenido-contac{
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    /* posiciona mienti */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        /* codigo para alinear vertical como horizontal */
+}
+/* se le agrega sombra al main */
+.sombra{
+    
+    box-shadow: 0px 5px 35px -11px rgba(82,82,196,0.55);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+/* ------------------------------ */
+/* servcios */
+/* se utiliza grid para que las cajas de servicios se coloquen en una grilia */
+@media (min-width: 768px) {
+    /* se coloca en un media para el responsively */
+    .servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    column-gap: 10px;
+    }
+}
+/* se utiliza dysplay flex para la alieneacion dentro del las cajas */
+.programa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .lenguajes h3{
+    color: var(--secundario);
+} */
+.programa p{
+    line-height: 2;
+    text-align: center;
+}
+/* se realizan iconos redondos para colocar imagenes en el interiosr */
+.programa .iconos{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+.hoja{
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 120rem;
+    /* margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 1rem auto;
+    padding: 3.5rem;
+}
+.foto{
+    display: grid;
+    grid-template-columns: 8fr 2fr ;
+    column-gap: 10px;
+    /* border: 1px solid #000000;   */
+}
+.foto__picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    height: 140px;
+    width: 120px;
+    /* border: 1px solid #000000; */
+}
+/* ------ info para alinear los tabler icons */
+.info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    /* border: 1px solid var(--primario); */
+    margin: 0 10px 0 10px;
+    padding: 0;
+    height: 30px;
+}
+/* --------------- */
+.datosinfo{
+    /* border: 1px solid violet; */
+}
+/* modificando listas */
+.informa__experiencia ul li{
+    margin-top: 1rem;
+    text-align: justify;
+}
+/*  */
+.datosinfo h1, h4, span{
+    text-align: start;
+    color: var(--titulohoja);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.informa{
+    /* border: 1px solid var(--primario); */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-top: 3rem;
+}
+.informa__experiencia{
+    text-align: start;
+    /* border: 1px solid blue; */
+}
+/* .caja{
+    border: 1px solid green;
+}
+.cajaex{
+    border: 1px solid green;
+} */
+/* complementos */
+.informa__complementos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.informa__referencias{
+    grid-column: 2/3;
+}
+.caja__parrafo{
+    padding: 1vh;
+    text-align: justify;
+}
+/* cursos */
+.caja__cursos{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.cursos{
+    display: flex;
+    justify-content: left;
+    align-items:start;
+    flex-direction: row;
+    font-size: 12px;
+    /* border: 1px solid var(--primario);  */
+    margin: 0 10px 10px 10px;
+    padding: 0;  
+}
+.cursos__habilidades{
+    border: 1px solid var(--gris);
+    border-radius: 10cm;
+    text-align: center;
+    /* box-shadow: 0px 0px 0px 5px rgba(219,248,252,1); */
+    margin-right: 0.5rem;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: #dbdbdb;
+}
+/* fortalezas */
+.titulosub__fortalezas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1vh;
+    padding: 10px;
+    font-size: small;
+}
+.titulosub__fortalezas--caja{
+    border: 1px solid var(--gris);
+    border-radius: 10cm;
+    text-align: center;
+    box-shadow: 0px 0px 0px 5px rgba(219,248,252,1);
+    
+}
+/* lengualjes */
+.relleno{
+    background-color: var(--secundario);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--oscuro);
+}
+.rellenoblanco{
+    background-color: var(--blanco);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--oscuro);
+}
+.lenguajes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    /* border: 1px solid var(--primario); */
+    margin: 0 10px 0 10px;
+    padding: 0;
+    
+}
+
+/* ------------fin de complementos */
+/* titulos de bloques */
+
+.titulosub{
+    text-align: start;
+    color: var(--titulohoja);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    /* text-decoration: underline solid 2px; */
+    border-bottom: 3px solid var(--titulohoja);
+}
+.titulocaja{
+    text-align: start;
+    color: var(--oscuro);
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+.titulosubcaja{
+    text-align: start;
+    color: var(--titulohoja);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+/* ------------ fin titulos de bloqes --------*/
+.titulosub__pride{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.icon{
+    margin:0 0.5rem 0 0.5rem;
+}
+  /* .........prueba containesr */
+  /* un dia de mi vida */
+.pie-contenido{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    /* border: 1px solid var(--primario); */
+    margin: 0 10px 0 10px;
+    padding: 2rem;  
+}
+.prueba{
+    margin: 0 ;
+    background-color: #1a0133;
+    font-family: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    width: 1000px;
+}
+.chart-wrap{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.pie-chart{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--gris);
+    background: conic-gradient(
+        from 0deg,
+        rgb(106, 12, 146) 0,
+        rgb(106, 12, 146)          calc(33.33%),
+        rgb(27, 51, 191)    calc(33.33%),/* desde */
+        rgb(27, 51, 191)    calc(33.33% + 33.33%),/* hasta */
+        rgb(43, 226, 104)   calc(33.33% + 33.33%),/* desde */
+        rgb(43, 226, 104)   calc(33.33% + 33.33% + 8.33%),/* hasta */
+        #c8a91e             calc(33.33% + 33.33% + 8.33%),
+        #c8a91e             calc(33.33% + 33.33% + 8.33% + 12.5%),
+        #4f58f8f8             calc(33.33% + 33.33% + 8.33% + 12.5%),
+        #4f58f8f8             calc(33.33% + 33.33% + 8.33% + 12.5% + 12.5%)
+        
+    );
+}
+.chart-info h2{
+    text-transform: capitalize;
+    /* font-size: 30px; */
+    /* color: #dbdbdb; */
+}
+.chart-info ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.chart-info ul li{
+    margin-bottom: 10px;
+    /* font-size: 30px; */
+    text-align: left;
+    /* color: #ffffff; */
+}
+.chart-info ul li span{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+/* ---------- fin hoja de vida  --------------*/

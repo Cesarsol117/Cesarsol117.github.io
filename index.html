@@ -4,12 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina</title>
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- se agregan fuentes -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- -------- -->
+    <title>Welcome</title>
 </head>
     <body>
-        <h1>Hola mundo</h1>
-        <p>es para verificar pagina en github pages</p>
-        <img src="https://imgur.com/gallery/wmrd8NC" alt="">
+        <header>
+            <div class="titulo"><h1>Bienvenido a Cesar <span>frelancer</span></h1></div>
+        </header>
+        <div class="nav-bg">
+                <nav class="navegacion-principal contenedor">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./cv.html">Quien soy</a>
+                    <a href="./contact.html">Contactame</a>
+                </nav>
+        </div>
+        
+        <section class="hero">
+            <div class="contenido-hero">
+                <h2 class="">Desarrollo web <span>freelancer</span></h2>
+                <br>
+                <br>
+                <p>bogotá, colombia</p>
+                <a class="boton" href="./contact.html">Contacto</a>
+            </div>
+            
+        </section>
     
+        <!-- contenedor principal -->
+        <main class="contenedor sombra">
+            <h2>Bienvenidos, lenguajes de programacion</h2>
+            <!-- servicios -->
+            <div class="servicios">
+                <section class="programa">
+                    <h3>Python</h3>
+                    <div class="iconos"></div>
+                    <p>python es el lenguaje de programacion que conozco, se programar 
+                        django, flask y pip.</p>
+                </section>
+                <!-- otra seccion u otro leguiaje -->
+                <section class="programa">
+                    <h3>Javascrip</h3>
+                    <div class="iconos"></div>
+                    <p>tambien uno de los lenguajes más usados y queridos del mundo de la 
+                        programacion y otro qque puedo manejer bastante Bien.
+                    </p>
+                </section>
+                <section class="programa">
+                    <h3>Javascrip</h3>
+                    <div class="iconos"></div>
+                    <p>tambien uno de los lenguajes más usados y queridos del mundo de la 
+                        programacion y otro qque puedo manejer bastante Bien.
+                    </p>
+                </section>
+                <section class="programa">
+                    <h3>Javascrip</h3>
+                    <div class="iconos"></div>
+                    <p>tambien uno de los lenguajes más usados y queridos del mundo de la 
+                        programacion y otro qque puedo manejer bastante Bien.
+                    </p>
+                </section>
+            </div>
+            <!-- cierre de clase de servicios -->
+        </main>
+        <!-- fin del contenedor de  servicios -->
+        <footer>
+            <p>todos los derechos reservados</p>
+        </footer>
     </body>
 </html>
