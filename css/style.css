@@ -205,7 +205,7 @@ h1,h2,h3{
     }
 }
 /* se utiliza dysplay flex para la alieneacion dentro del las cajas */
-.programa{
+.lenguajes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,12 +213,12 @@ h1,h2,h3{
 /* .lenguajes h3{
     color: var(--secundario);
 } */
-.programa p{
+.lenguajes p{
     line-height: 2;
     text-align: center;
 }
 /* se realizan iconos redondos para colocar imagenes en el interiosr */
-.programa .iconos{
+.lenguajes .iconos{
     height: 2.5rem;
     width: 2.5rem;
     background-color: var(--primario);
@@ -257,6 +257,22 @@ h1,h2,h3{
     width: 120px;
     /* border: 1px solid #000000; */
 }
+
+.data-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 17px;
+    
+    /* border: 1px solid slateblue; */
+    margin: 0 10px 0 10px;
+    padding: 0;
+    height: 30px;
+}
+.data-info span a{
+    text-decoration: none;
+}
 /* ------ info para alinear los tabler icons */
 .info{
     display: flex;
@@ -273,12 +289,6 @@ h1,h2,h3{
 .datosinfo{
     /* border: 1px solid violet; */
 }
-/* modificando listas */
-.informa__experiencia ul li{
-    margin-top: 1rem;
-    text-align: justify;
-}
-/*  */
 .datosinfo h1, h4, span{
     text-align: start;
     color: var(--titulohoja);
@@ -291,11 +301,16 @@ h1,h2,h3{
     grid-template-columns: 2fr 1fr;
     column-gap: 3rem;
     row-gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .informa__experiencia{
     text-align: start;
     /* border: 1px solid blue; */
+}
+.informa__experiencia ul li{
+    margin-top: 1rem;
+    text-align: justify;
+
 }
 /* .caja{
     border: 1px solid green;
@@ -453,8 +468,8 @@ h1,h2,h3{
     background-color: var(--gris);
     background: conic-gradient(
         from 0deg,
-        rgb(106, 12, 146) 0,
-        rgb(106, 12, 146)          calc(33.33%),
+        rgb(86, 7, 171) 0,
+        rgb(86, 7, 171)          calc(33.33%),
         rgb(27, 51, 191)    calc(33.33%),/* desde */
         rgb(27, 51, 191)    calc(33.33% + 33.33%),/* hasta */
         rgb(43, 226, 104)   calc(33.33% + 33.33%),/* desde */
@@ -489,4 +504,3 @@ h1,h2,h3{
     margin-left: 5px;
     display: inline-block;
 }
-/* ---------- fin hoja de vida  --------------*/
