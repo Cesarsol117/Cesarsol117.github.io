@@ -271,8 +271,9 @@ h1,h2,h3{
     height: 30px;
 }
 
-.data-info span a{
+.data-info a{
     text-decoration: none;
+    color: var(--titulohoja);
 }
 /* ------ info para alinear los tabler icons */
 .info{
