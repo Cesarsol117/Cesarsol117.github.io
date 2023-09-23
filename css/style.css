@@ -314,12 +314,27 @@ h1,h2,h3{
     text-align: justify;
 
 }
-/* .caja{
-    border: 1px solid green;
+.caja-daymyLife{
+    /* border: 1px solid green; */
+    grid-column: 1/2;
 }
 .cajaex{
-    border: 1px solid green;
-} */
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+
+}
+.cajaex a{
+    text-decoration: none;
+    color: #000000;
+    
+}
+.cajaex ul{
+    padding-right: 10px;
+    list-style:square;
+}
 /* complementos */
 .informa__complementos{
     grid-column: 2/3;
@@ -327,6 +342,7 @@ h1,h2,h3{
 }
 .informa__referencias{
     grid-column: 2/3;
+    grid-row: 2/3;
 }
 .caja__parrafo{
     padding: 1vh;
@@ -344,7 +360,7 @@ h1,h2,h3{
     flex-direction: row;
     font-size: 12px;
     /* border: 1px solid var(--primario);  */
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 5px 20px;
     padding: 0;  
 }
 .cursos__habilidades{
