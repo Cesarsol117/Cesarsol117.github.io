@@ -288,9 +288,9 @@ h1,h2,h3{
     height: 30px;
 }
 /* --------------- */
-.datosinfo{
+/* .datosinfo{
     /* border: 1px solid violet; */
-}
+
 .datosinfo h1, h4, span{
     text-align: start;
     color: var(--titulohoja);
