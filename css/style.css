@@ -325,7 +325,7 @@ h1,h2,h3{
     font-size: 12px;
     /* border: 1px solid var(--primario); */
     margin: 0 10px 0 10px;
-    padding: 0;
+    padding: 25px 0 25px 0;
     height: 30px;
 }
 /* --------------- */
@@ -563,6 +563,7 @@ h1,h2,h3{
     border-radius: 5px;
     margin-left: 5px;
     display: inline-block;
+    margin-right: 10px;
 }
 .titulo-imagen{
     /* border: 1px solid red; */
@@ -641,5 +642,8 @@ h1,h2,h3{
     .chart-info ul li span {
         display: inline flow-root list-item;
         margin-right: 10px;
+    }
+    .pie-contenido{
+        flex-direction: column; 
     }
 }
