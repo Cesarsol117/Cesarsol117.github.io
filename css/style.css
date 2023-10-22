@@ -564,8 +564,19 @@ h1,h2,h3{
     margin-left: 5px;
     display: inline-block;
 }
-
-
+.titulo-imagen{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.titulo-image-logo{
+    /* border: 1px solid blue; */
+    width: 110px;
+}
+.imagen-logo{
+    /* width: 50px; */
+    height: 40px;
+}
 @media (max-width: 720px) {
     .data-main {
         grid-template-columns: 1fr;
@@ -597,8 +608,6 @@ h1,h2,h3{
     .informa{
         grid-template-columns: 1fr;
         row-gap: 1rem;
-        /* border: 1px solid var(--secundario);
-        background-color: #757575; */
         place-items: center;
     }
     .informa__experiencia{
@@ -617,12 +626,6 @@ h1,h2,h3{
         grid-column: 1;
         grid-row: 3;
     }
-    /* .informa__experiencia,
-    .informa__complementos,
-    .informa__referencias,
-    .caja__cursos{
-    }
-    grid-column: auto; */
     .titulosub {
         text-align: center;
     }
