@@ -650,3 +650,15 @@ h1,h2,h3{
 .notas{
     font-size: small;
 }
+.iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.programa{
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    text-align: justify;
+}
