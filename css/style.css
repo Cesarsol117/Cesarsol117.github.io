@@ -118,16 +118,17 @@ h1,h2,h3{
 }
 /* se agrega un hero */
 .hero{
-    background-image: url( https://drive.google.com/uc?id=1HeQkUbE_fyXrmO0T9foaG_yA83Yuu6hn);
+    background-image: url(https://drive.google.com/uc?id=1HeQkUbE_fyXrmO0T9foaG_yA83Yuu6hn);
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
     position: relative;
     margin-bottom: 2rem;
+    background-color: #0097a7;
 }
 
 .contenido-hero{
-    position: absolute;
+    
     background-color: rgba(0,0,0, .5);
     width: 100%;
     height: 100%;
@@ -146,11 +147,12 @@ h1,h2,h3{
     background-size: cover;
     height: 20rem;
     position: relative;
+    background-color: rgb(5, 126, 128);
     
 }
 
 .contenido-cv{
-    position: absolute;
+    /* position: absolute; */
     background-color: rgba(0,0,0, .5);
     width: 100%;
     height: 100%;
@@ -170,6 +172,7 @@ h1,h2,h3{
     background-size: cover;
     height: 45rem;
     position: relative;
+    background-color: #0097a7;
 }
 
 .contenido-contac{
