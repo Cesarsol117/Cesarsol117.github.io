@@ -176,7 +176,7 @@ h1,h2,h3{
 }
 
 .contenido-contac{
-    position: absolute;
+    /* position: absolute; */
     background-color: rgba(0,0,0, .5);
     width: 100%;
     height: 100%;
